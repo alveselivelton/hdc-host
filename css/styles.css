@@ -25,13 +25,15 @@ p {
 /* navbar */
 header {
   background-color: #232a31;
-  position: sticky;
+  position: fixed;
+  width: 100%;
+  height: 100px;
   top: 0;
   z-index: 10;
 }
 
 .navbar-container {
-  height: 100px;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,14 +42,14 @@ header {
 
 .logo {
   width: 50px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .navbar-items {
   list-style: none;
   display: flex;
   gap: 30px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .nav-link {
@@ -76,7 +78,6 @@ header {
 .hamburger {
   display: none;
   cursor: pointer;
-  margin-right: 10px;
 }
 
 .bar {
@@ -85,7 +86,7 @@ header {
   height: 4px;
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
-  background-color: #fff;
+  background-color: #ccc;
 }
 
 /* main-banner */
@@ -96,6 +97,7 @@ header {
   background-position: center;
   padding: 10em 0;
   position: relative;
+  top: 100px;
 }
 
 .main-banner h1,
@@ -116,7 +118,7 @@ header {
 /* especialidades */
 
 .specialties-container {
-  padding: 5em 0;
+  padding: 11.5em 0 5em;
 }
 
 .specialties-container ul {
@@ -377,6 +379,10 @@ footer {
   }
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-9px) rotate(-45deg);
+  }
+
+  .logo {
+    margin-left: 0;
   }
 
   .navbar-items {
